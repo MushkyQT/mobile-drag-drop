@@ -71,7 +71,7 @@ function prepareNodeCopyAsDragImage(srcNode, dstNode) {
         }
         dstNode.style.pointerEvents = "none";
         dstNode.removeAttribute("id");
-        dstNode.removeAttribute("class");
+        // dstNode.removeAttribute("class"); Maintain classes on dragged element
         dstNode.removeAttribute("draggable");
         if (dstNode.nodeName === "CANVAS") {
             var canvasSrc = srcNode;
